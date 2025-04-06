@@ -22,8 +22,8 @@ function lowerBound(arr,x){
     
 }
 
-let arr=[1,2,2,4,5];
+let arr=[1,1,2,2,2,3,4,4,4,5,7,8,9];
 
-let x=3;
+let x=5;
 
 console.log(lowerBound(arr,x));
