@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #top{
+            border:10px solid red;
+            padding: 10px;
+            width: 0 auto;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #mid{
+            border:10px solid green;
+            padding: 10px;
+            width: 0 auto;
+            text-align: center;
+            margin: 10px;
+        }
+
+        #inner{
+            border:10px solid yellow;
+            padding: 10px;
+            width: 0 auto;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="top"> top
+        <div id="mid"> mid
+            <div id="inner"> inner</div>
+        </div>
+    </div>
+
+<script>
+
+    document.getElementById('top').addEventListener('click',()=> console.log('outer div clicked'))
+    document.getElementById('mid').addEventListener('click',()=> console.log('mid div clicked'))
+    document.getElementById('inner').addEventListener('click',()=> console.log('inner div clicked'))
+</script>
+
+</body>
+</html>
+
+
+//Event Bubbling -> A propagation model where events are handled from the innermost element to the outermost;
+
+// Event Capturing -> A propagation model wehre events are handled from the outermost element to the innermost;
