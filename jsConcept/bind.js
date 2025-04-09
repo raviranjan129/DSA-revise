@@ -19,4 +19,4 @@ cookforAdam();
  * apply-> Runs the function immediately, passing arguments as an array;
  * 
  * Bind-> creates a new function with present this and arguments , which you can call later;
- */
+ */ 
