@@ -2,7 +2,7 @@
 function moveZeros(arr){
     let i=0;
 
-    for(let j=1;j<arr.length;j++){
+    for(let j=0;j<arr.length;j++){
         if(arr[i] ==0 && arr[j] !=0){
             [arr[i],arr[j]]=[arr[j],arr[i]];
 
