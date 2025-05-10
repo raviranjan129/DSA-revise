@@ -2,6 +2,7 @@
 function permutationCombination(arr,idx,ans){
 
     if(idx == arr.length){
+        
         ans.push([...arr])
         return;
     }
